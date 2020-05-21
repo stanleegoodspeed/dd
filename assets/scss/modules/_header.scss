@@ -1,0 +1,48 @@
+.header-card {
+    display: flex;
+    flex-direction: column;
+	padding-right: 30px;
+	
+	h1 {
+		font-size: 48px;
+		line-height: 50px;
+		font-family: National-Bold;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+		color: #000000;
+
+		span {
+			font-family: Roboto-Medium;
+		}
+	}
+
+	&.tagline {
+		display: flex;
+		margin-top: 18px;
+		flex-grow: 1;
+		
+		h3 {
+			font-size: 26px;
+			line-height: 34px;
+		}
+	}
+
+	.cta-button {
+		border: 3px solid #724EEF;
+		box-sizing: border-box;
+		color: #724EEF;
+		max-height: 80px;
+		height: 100%;
+
+		h4 {
+			font-size: 24px;
+			line-height: 28px;
+			margin-bottom: 0px;
+		}
+
+		&:hover {
+			color: #fff;
+			background-color: #724EEF;
+			border-color: #724EEF;
+		}
+	}
+}

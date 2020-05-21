@@ -1,0 +1,62 @@
+.price-card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-left: 23px;
+	padding-bottom: 26px;
+	
+	h6 {
+		font-family: National-Bold;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 0.342857px;
+		text-transform: uppercase;
+		margin-bottom: 0px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 19px;
+		margin-top: 18px;
+	}
+
+	h1 {
+		font-family: National-Bold;
+    	font-size: 48px;
+    	line-height: 50px;
+    	font-feature-settings: 'pnum' on, 'lnum' on;
+	}
+
+	small {
+		font-size: 14px;
+    	line-height: 16px;
+	}
+
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 1em;
+		margin-top: 18px;
+		margin-right: 23px;
+		/*This pushes the link to the bottom - which is intended*/
+		flex-grow: 1;
+	}
+
+	li {
+		font-size: 16px;
+		line-height: 19px;
+		padding-bottom: 6px;
+
+		&:before {
+			display: inline-block;
+    		content: "-";
+    		width: 1em;
+    		margin-left: -1em;
+		}
+	}
+
+	a {
+		text-decoration: underline;
+    	text-underline-position: under;
+	}
+}

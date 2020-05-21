@@ -1,7 +1,16 @@
 
 	{{ define "main" }} 
 	<div class="container">
-		{{ partial "sidebar" . }} 
+		<div class="row container-row">
+			{{ partial "sidebar" . }} 
+			<div class="col main-container">
+                <div class="row">
+					{{ partial "header" . }}
+					{{ partial "price" . }} 
+				</div>
+				{{ partial "feature" . }}
+			</div>
+		</div>
 	</div>
 	{{ end }}
 

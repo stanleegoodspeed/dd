@@ -2,5 +2,12 @@
 @import '_colors';
 @import '_fonts';
 
-@import 'layout/_body.scss';
+@import 'layout/_body';
 @import 'modules/_sidebar';
+@import 'modules/_header';
+@import 'modules/_price';
+@import 'modules/_pricecard';
+@import 'modules/_feature';
+@import 'modules/_featurecard';
+@import 'modules/_companycard';
+@import 'modules/_observabilitycard';
