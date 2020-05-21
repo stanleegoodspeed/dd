@@ -1,0 +1,46 @@
+sidebar:
+  loginContent: "Login"
+  navList:
+    - linkContent: "product"
+    - linkContent: "docs"
+    - linkContent: "customers"
+    - linkContent: "about"
+    - linkContent: "blog"
+
+header:
+  mainContent: "Modern monitoring & analytics"
+  taglineContent: "See inside any stack, any app, at any scale, anywhere."
+  buttonContent: "Try Free"
+
+price:
+  priceItem:
+    # price item
+    - title : "Infrastructure"
+      subheader : "Starting at"
+      price : "$15"
+      priceSubText: "Per host, per month*"
+      itemDesc : "Centralize your monitoring of systems and services"
+      featureList:
+        - description: "250+ integrations"
+        - description: "Out-of-the-box dashboards"
+        - description: "15-month metric retention"
+    # price item
+    - title : "APM"
+      subheader : "Starting at"
+      price : "$31"
+      priceSubText: "Per host, per month*"
+      itemDesc : "Centralize your monitoring of systems and services"
+      featureList:
+        - description: "Java, Ruby, Python, Go, Node, and more"
+        - description: "Out-of-the-box application health dashboards"
+        - description: "1 million trace events per host included"  
+    # price item
+    - title : "Logs Management"
+      subheader : "Starting at"
+      price : "$1.27"
+      priceSubText: "Per host, per month*"
+      itemDesc : "Analyze and explore log data in context"
+      featureList:
+        - description: "Collect from any source"
+        - description: "Automated & custom processing"
+        - description: "Fully integrated with Infrastructure and APM"

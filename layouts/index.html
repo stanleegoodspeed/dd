@@ -1,18 +1,18 @@
-
-	{{ define "main" }} 
-	<div class="container">
-		<div class="row container-row">
-			{{ partial "sidebar" . }} 
-			<div class="col main-container">
-                <div class="row">
-					{{ partial "header" . }}
-					{{ partial "price" . }} 
-				</div>
-				{{ partial "feature" . }}
+{{ define "main" }} 
+<div class="container">
+	<div class="row container-row">
+		{{ partial "sidebar" . }} 
+		<div class="col main-container">
+            <div class="row">
+				{{ partial "header" . }}
+				{{ partial "price" . }} 
 			</div>
+			{{ partial "feature" . }}
 		</div>
 	</div>
-	{{ end }}
+	{{ partial "footer" . }}
+</div>
+{{ end }}
 
 
 	

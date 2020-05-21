@@ -6181,3 +6181,8 @@ body {
 
 .arrow {
   align-self: center; }
+
+.footer {
+  background: linear-gradient(180deg, #443E48 0%, #110617 100%);
+  color: white;
+  height: 500px; }
