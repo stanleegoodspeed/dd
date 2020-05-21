@@ -1,0 +1,43 @@
+/* Sidebar */
+
+.sidebar {
+    background-color: #724EEF;
+    max-width: 166px;
+}
+
+.logo {
+    margin-left: 24px;
+    margin-top: 40px;
+    margin-right: 46px;
+}
+
+.sidebar-nav {
+    ul {
+        list-style: none;
+        padding-left: 0px;
+        margin-left: 25px;
+        margin-top: 56px;
+        margin-bottom: 0px;
+    }
+    li {
+        text-transform: uppercase;
+        padding-bottom: 27px;
+        a {
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+.login-btn {
+    margin-top: 59px;
+    margin-left: 25px;
+}
+
+.login-button-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
