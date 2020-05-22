@@ -5985,15 +5985,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: "National-Bold";
-  src: url("fonts/national-test-semibold.woff") format("woff"); }
+  src: url("../../static/fonts/national-test-semibold.woff") format("woff"); }
 
 @font-face {
   font-family: "National";
-  src: url("fonts/national-test-light.woff") format("woff"); }
+  src: url("../../static/fonts/national-test-light.woff") format("woff"); }
 
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("fonts/Roboto-Medium.ttf") format("truetype"); }
+  src: url("../../static/fonts/Roboto-Medium.ttf") format("truetype"); }
 
 * {
   font-family: National; }
@@ -6058,11 +6058,11 @@ body {
     color: #000000; }
     .header-card h1 span {
       font-family: Roboto-Medium; }
-  .header-card.tagline {
+  .header-card .tagline {
     display: flex;
     margin-top: 18px;
     flex-grow: 1; }
-    .header-card.tagline h3 {
+    .header-card .tagline h3 {
       font-size: 26px;
       line-height: 34px; }
   .header-card .cta-button {
@@ -6074,7 +6074,8 @@ body {
     .header-card .cta-button h4 {
       font-size: 24px;
       line-height: 28px;
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      text-transform: uppercase; }
     .header-card .cta-button:hover {
       color: #fff;
       background-color: #724EEF;
@@ -6115,7 +6116,6 @@ body {
     padding-left: 1em;
     margin-top: 18px;
     margin-right: 23px;
-    /*This pushes the link to the bottom - which is intended*/
     flex-grow: 1; }
   .price-card li {
     font-size: 16px;
@@ -6129,6 +6129,20 @@ body {
   .price-card a {
     text-decoration: underline;
     text-underline-position: under; }
+  .price-card .price-card-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-right: 1px solid #C7C7C7; }
+
+.infra-box h6, .infra-box a {
+  color: #2B2AA7; }
+
+.apm-box h6, .apm-box a {
+  color: #14D071; }
+
+.log-box h6, .log-box a {
+  color: #FF635A; }
 
 .feature-container {
   padding-top: 30px; }

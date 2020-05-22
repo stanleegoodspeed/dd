@@ -1,15 +1,15 @@
-<div class="col-sm-10 col-md-12 col-xl-4 price-card ">
-	<div class="price-card-right-border">
-		<h6 class="infra-color">Infrastructure</h6>
-		<p>Starting at</p>
-		<h1>$15</h1>
-		<small>Per host, per month*</small>
-		<p>Centralize your monitoring of systems and services</p>
+<div class="col-sm-10 col-md-12 col-xl-4 price-card">
+	<div class="price-card-container {{ .color }}-box">
+		<h6>{{ .title }}</h6>
+		<p>{{ .subheader }}</p>
+		<h1>{{ .price }}</h1>
+		<small>{{ .priceSubText }}</small>
+		<p>{{ .itemDesc }}</p>
 		<ul>
-			<li>250+ integrations</li>
-			<li>Out-of-the-box dashboards</li>
-			<li>15-month metric retention</li>
+			{{ range $index, $element := .featureList }}
+				<li>{{ .description }}</li>
+			{{ end }}
 		</ul>
-		<a href="#" class="infra-color">See Details</a>
+		<a href="#">See Details</a>
 	</div>
 </div>

@@ -1,7 +1,9 @@
 <div class="col-sm-12 col-md-12 col-xl-8">
 	<div class="row price-card-container">
-		{{ partial "pricecard" . }}
-		{{ partial "pricecard" . }}
-		{{ partial "pricecard" . }}
+		{{ with .Site.Data.content.price }}
+			{{ range $index, $element := .items }}
+				{{ partial "pricecard" . }}
+			{{ end }}
+		{{ end }}
 	</div>
 </div>

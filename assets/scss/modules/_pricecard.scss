@@ -38,7 +38,6 @@
 		padding-left: 1em;
 		margin-top: 18px;
 		margin-right: 23px;
-		/*This pushes the link to the bottom - which is intended*/
 		flex-grow: 1;
 	}
 
@@ -59,4 +58,31 @@
 		text-decoration: underline;
     	text-underline-position: under;
 	}
+
+	.price-card-container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		border-right: 1px solid #C7C7C7;
+	}
+
 }
+
+.infra-box {
+	h6,a {
+		color: $infraColor;
+	} 
+}
+
+.apm-box {
+	h6,a {
+		color: $apmColor;
+	} 
+}
+
+.log-box {
+	h6,a {
+		color: $logColor;
+	} 
+}
+

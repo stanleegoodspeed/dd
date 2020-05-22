@@ -13,19 +13,22 @@ header:
   buttonContent: "Try Free"
 
 price:
-  priceItem:
+  items:
     # price item
     - title : "Infrastructure"
+      color: "infra"
       subheader : "Starting at"
       price : "$15"
       priceSubText: "Per host, per month*"
       itemDesc : "Centralize your monitoring of systems and services"
+      linkContent: "See details"
       featureList:
         - description: "250+ integrations"
         - description: "Out-of-the-box dashboards"
         - description: "15-month metric retention"
     # price item
     - title : "APM"
+      color: "apm"
       subheader : "Starting at"
       price : "$31"
       priceSubText: "Per host, per month*"
@@ -36,6 +39,7 @@ price:
         - description: "1 million trace events per host included"  
     # price item
     - title : "Logs Management"
+      color: "log"
       subheader : "Starting at"
       price : "$1.27"
       priceSubText: "Per host, per month*"

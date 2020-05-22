@@ -1,27 +1,19 @@
 <div class="col sidebar d-none d-lg-block">
     {{ partial "logo" .}}
+	{{ with .Site.Data.content.sidebar }}
     <div class="sidebar-nav">
         <ul>
+			{{ range $index, $element := .navList }}
             <li>
-                <a href="#">product</a>
-            </li>
-            <li>
-                <a href="#">docs</a>
-            </li>
-            <li>
-                <a href="#">customers</a>
-            </li>
-            <li>
-                <a href="#">about</a>
-            </li>
-            <li>
-                <a href="#">blogs</a>
-            </li>
+                <a href="#">{{ .linkContent }}</a>
+			</li>
+			{{ end }}
         </ul>
     </div>
     <div class="login-btn">
         <a href="#">
-            <p class="login-button-text">Login</p>
+            <p class="login-button-text">{{ .loginContent }}</p>
         </a>
     </div>
+	{{ end }}
 </div>
