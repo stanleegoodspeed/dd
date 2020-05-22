@@ -8,7 +8,8 @@
 ### Deploy
 1. export AWS_PROFILE=[profile]
 2. hugo -D
-3. hugo deploy
+3. hugo deploy --invalidateCDN
+4. deploys to demo.colincole.me
 
 ### Notes
 The fonts used in this project is National with a Roboto fallback for glyphs and other characters not included in the free download from https://klim.co.nz/retail-fonts/national/
