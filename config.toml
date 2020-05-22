@@ -1,4 +1,4 @@
-baseURL = "http://localhost"
+baseURL = "http://demo.colincole.me"
 languageCode = "en-us"
 title = "Datadog Redesign - CC"
 
@@ -15,6 +15,9 @@ name = "demo.colincole.me deployment"
 # S3; see https://gocloud.dev/howto/blob/#s3
 # For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
 URL = "s3://demo.colincole.me?region=us-east-1"
+
+# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+cloudFrontDistributionID = "E22OJ34LUCPNM7"
 
 [[deployment.matchers]]
 #  Cache static assets for 1 year.
