@@ -16,6 +16,7 @@ price:
   items:
     # price item
     - title : "Infrastructure"
+      borderEnable : true
       color: "infra"
       subheader : "Starting at"
       price : "$15"
@@ -28,6 +29,7 @@ price:
         - description: "15-month metric retention"
     # price item
     - title : "APM"
+      borderEnable : true
       color: "apm"
       subheader : "Starting at"
       price : "$31"
@@ -39,6 +41,7 @@ price:
         - description: "1 million trace events per host included"  
     # price item
     - title : "Logs Management"
+      borderEnable : false
       color: "log"
       subheader : "Starting at"
       price : "$1.27"
@@ -48,3 +51,10 @@ price:
         - description: "Collect from any source"
         - description: "Automated & custom processing"
         - description: "Fully integrated with Infrastructure and APM"
+
+feature:
+  companies:
+    - name: "airbnb"
+    - name: "peloton"
+    - name: "evernote"
+    - name: "pagerduty"
