@@ -6,13 +6,9 @@
 	h1 {
 		font-size: 48px;
 		line-height: 50px;
-		font-family: National-Bold;
+		font-family: National-Bold, Roboto-Medium, serif;
 		font-feature-settings: 'pnum' on, 'lnum' on;
 		color: #000000;
-
-		span {
-			font-family: Roboto-Medium;
-		}
 	}
 
 	.tagline {

@@ -5985,18 +5985,22 @@ a.text-dark:hover, a.text-dark:focus {
 
 @font-face {
   font-family: "National-Bold";
-  src: url("../../static/fonts/national-test-semibold.woff") format("woff"); }
+  src: url("/fonts/national-test-semibold.woff") format("woff"); }
 
 @font-face {
   font-family: "National";
-  src: url("../../static/fonts/national-test-light.woff") format("woff"); }
+  src: url("/fonts/national-test-light.woff") format("woff"); }
 
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("../../static/fonts/Roboto-Medium.ttf") format("truetype"); }
+  src: url("/fonts/Roboto-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("/fonts/Roboto-Light.ttf") format("truetype"); }
 
 * {
-  font-family: National, Roboto-Medium, serif; }
+  font-family: National, Roboto-Light, serif; }
 
 body {
   background-color: lightgrey;
@@ -6038,7 +6042,7 @@ body {
     line-height: 19px; }
 
 .login-btn {
-  margin-top: 59px;
+  margin-top: 49px;
   margin-left: 25px; }
 
 .login-button-text {
@@ -6053,11 +6057,9 @@ body {
   .header-card h1 {
     font-size: 48px;
     line-height: 50px;
-    font-family: National-Bold;
+    font-family: National-Bold, Roboto-Medium, serif;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000; }
-    .header-card h1 span {
-      font-family: Roboto-Medium; }
   .header-card .tagline {
     display: flex;
     margin-top: 18px;
@@ -6103,9 +6105,9 @@ body {
     line-height: 19px;
     margin-top: 18px; }
   .price-card h1 {
-    font-family: National-Bold;
     font-size: 48px;
     line-height: 50px;
+    font-family: Roboto-Medium;
     font-feature-settings: 'pnum' on, 'lnum' on; }
   .price-card small {
     font-size: 14px;
@@ -6204,3 +6206,9 @@ body {
   background: linear-gradient(180deg, #443E48 0%, #110617 100%);
   color: white;
   height: 500px; }
+
+.navbar {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #724EEF; }
