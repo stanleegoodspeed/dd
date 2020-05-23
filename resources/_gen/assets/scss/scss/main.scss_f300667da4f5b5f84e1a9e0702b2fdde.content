@@ -6189,6 +6189,13 @@ body {
   padding-bottom: 30px;
   max-width: 557px; }
 
+.company-card {
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-bottom: 108px; }
+  .company-card .row2 {
+    padding-left: 15px; }
+
 .company-square {
   width: 186px;
   height: 184px;
@@ -6197,6 +6204,48 @@ body {
   justify-content: center; }
   .company-square img {
     align-self: center; }
+
+.airbnb {
+  background-color: #FF5A5F; }
+
+.peloton {
+  background-color: #000000; }
+
+.evernote {
+  background: #292929; }
+
+.evernote img {
+  width: 70%; }
+
+.pagerduty {
+  background-color: #5DBD5F; }
+
+.pagerduty img {
+  width: 70%; }
+
+.samsung {
+  background-color: #1428A0; }
+
+.samsung img {
+  width: 70%; }
+
+.wholefoods {
+  background-color: #000000; }
+
+.wholefoods img {
+  width: 70%; }
+
+.att {
+  background-color: #00A8E0; }
+
+.att img {
+  width: 70%; }
+
+.nginx {
+  background-color: #00AA4E; }
+
+.nginx img {
+  width: 70%; }
 
 .observability {
   background: #F5F5F5; }

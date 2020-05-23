@@ -1,0 +1,20 @@
+<div class="row feature-container">
+	<div class="col-sm-12 col-md-12 col-xl-6 ">
+		{{ partial "featurecard" (dict "Type" "apm") }}
+	</div>
+	<div class="col-sm-12 col-md-12 col-xl-6 ">
+		{{ partial "featurecard" (dict "Type" "infra") }}
+	</div>
+
+</div>
+
+<div class="row">
+	<div class="col-sm-12 col-md-12 col-xl-6 ">
+		{{ partial "featurecard" (dict "Type" "logs") }}
+		{{ partial "companycard" . }}
+	</div>
+	<div class="col-sm-12 col-md-12 col-xl-6 ">
+		{{ partial "observabilitycard" . }}
+	</div>
+	
+</div>

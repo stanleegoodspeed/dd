@@ -1,3 +1,15 @@
+.company-card {
+	padding-bottom:15px;
+	padding-left:15px;
+	padding-bottom: 108px;
+
+	.row2 {
+		padding-left:15px;
+	}
+}
+
+
+
 .company-square {
     width: 186px;
     height: 184px;
@@ -8,4 +20,60 @@
 	img {
 		align-self: center;
 	}
+}
+
+.airbnb {
+    background-color: $airbnbColor;
+}
+
+.peloton {
+    background-color: $pelotonColor;
+}
+
+.evernote {
+    background: $evernoteColor;
+}
+
+.evernote img {
+    width: 70%;
+}
+
+.pagerduty {
+    background-color: $pagerdutyColor;
+}
+
+.pagerduty img {
+    width: 70%;
+}
+
+.samsung {
+    background-color: $samsungColor;
+}
+
+.samsung img {
+    width: 70%;
+}
+
+.wholefoods {
+    background-color: $wholefoodsColor;
+}
+
+.wholefoods img {
+    width: 70%;
+}
+
+.att {
+    background-color: $attColor;
+}
+
+.att img {
+    width: 70%;
+}
+
+.nginx {
+    background-color: $nginxColor;
+}
+
+.nginx img {
+    width: 70%;
 }

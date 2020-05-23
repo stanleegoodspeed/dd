@@ -1,35 +1,23 @@
-<div class="row">
+<div class="row company-card">
 
-	<div class="row d-flex">
-		<div class="col">
-			<div class="company-square airbnb">
-				<img src="images/airbnb.png" alt="airbnb" srcset="">
-			</div>
-			<div class="company-square peloton">
-				<img src="images/peloton.png" alt="peloton" srcset="">
+	<div class="row" style="width:100%;">
+		<div class="col-lg-4" style="padding-right:0px;">
+			{{ partial "companysquare" (dict "company" "airbnb") }}
+			{{ partial "companysquare" (dict "company" "peloton") }}
+		</div>
+		<div class="col-lg-8" style="background-color:#F5F5F5;">
+			<div class="row">
 			</div>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="company-square evernote">
-			<img src="images/evernote.png" alt="evernote" srcset="">
-		</div>
-		<div class="company-square samsung">
-			<img src="images/samsung.png" alt="samsung" srcset="">
-		</div>
-		<div class="company-square nginx">
-			<img src="images/nginx.png" alt="nginx" srcset="">
-		</div>
-		<div class="company-square pagerduty">
-			<img src="images/pagerduty.png" alt="pagerduty" srcset="">
-		</div>
-		<div class="company-square wholefoods">
-			<img src="images/wholefoods.png" alt="wholefoods" srcset="">
-		</div>
-		<div class="company-square att">
-			<img src="images/att.png" alt="att" srcset="">
-		</div>
+	<div class="row d-flex row2">
+		{{ partial "companysquare" (dict "company" "evernote") }}
+		{{ partial "companysquare" (dict "company" "samsung") }}
+		{{ partial "companysquare" (dict "company" "nginx") }}
+		{{ partial "companysquare" (dict "company" "pagerduty") }}
+		{{ partial "companysquare" (dict "company" "wholefoods") }}
+		{{ partial "companysquare" (dict "company" "att") }}
 	</div>
 	
 </div>
