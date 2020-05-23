@@ -51,34 +51,33 @@ price:
 
 footer:
   btnContent: "free trial"
-  productSection:
-    title: "Product"
-    items:
-      - description: "Features"
-      - description: "APM"
-      - description: "Integrations"
-      - description: "Alerts"
-      - description: "API"
-      - description: "Pricing"
-      - description: "Documentation"
-      - description: "Support"
-      - description: "Resources"
-      - description: "Security"
-  aboutSection:
-    title: "About"
-    items:
-      - description: "Contact Us"
-      - description: "Partners"
-      - description: "Press"
-      - description: "Our Team"
-      - description: "Careers"
-      - description: "Legal"
-  socialSection:
-    title: "Social"
-    items:
-      - description: "Blog"
-      - description: "Espanol"
-      - description: "Japanese"
-      - description: "Instagram"
-      - description: "Twitter"
+  copyright: "© Datadog 2017"
+  sections:
+    - title: "Product"
+      items:
+        - description: "Features"
+        - description: "APM"
+        - description: "Integrations"
+        - description: "Alerts"
+        - description: "API"
+        - description: "Pricing"
+        - description: "Documentation"
+        - description: "Support"
+        - description: "Resources"
+        - description: "Security"
+    - title: "About"
+      items:
+        - description: "Contact Us"
+        - description: "Partners"
+        - description: "Press"
+        - description: "Our Team"
+        - description: "Careers"
+        - description: "Legal"
+    - title: "Social"
+      items:
+        - description: "Blog"
+        - description: "Espanol"
+        - description: "Japanese"
+        - description: "Instagram"
+        - description: "Twitter"
       

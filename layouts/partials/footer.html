@@ -1,2 +1,13 @@
 <div class="row footer">
+	{{ with .Site.Data.content.footer }}
+	<div class="col">
+		<button>{{ .btnContent }}</button>
+		{{ .copyright }}
+	</div>
+	{{ range $index, $element := .sections }}
+	<div class="col">
+		{{ partial "footerlist" . }}
+	</div>
+	{{ end }}
+	{{ end }}
 </div>
