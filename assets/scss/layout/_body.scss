@@ -13,6 +13,11 @@ body {
 
 .main-container {
     padding-top: 38px;
-	padding-right: 60px;
 	padding-left:30px;
+	padding-right: 60px;
+
+	// TODO - Should only be done for large and above
+	// @include media-breakpoint-up(md) {	
+	// 	padding-right: 60px;
+	// }
 }
