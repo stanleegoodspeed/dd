@@ -52,19 +52,22 @@ price:
 footer:
   btnContent: "free trial"
   copyright: "© Datadog 2017"
+  termsContent: "Terms  |  Privacy  |  Cookies"
+  product: 
+    title: "Product"
+    items:
+      - description: "Features"
+      - description: "APM"
+      - description: "Integrations"
+      - description: "Alerts"
+      - description: "API"
+      - description: "Pricing"
+    items2:
+      - description: "Documentation"
+      - description: "Support"
+      - description: "Resources"
+      - description: "Security"
   sections:
-    - title: "Product"
-      items:
-        - description: "Features"
-        - description: "APM"
-        - description: "Integrations"
-        - description: "Alerts"
-        - description: "API"
-        - description: "Pricing"
-        - description: "Documentation"
-        - description: "Support"
-        - description: "Resources"
-        - description: "Security"
     - title: "About"
       items:
         - description: "Contact Us"

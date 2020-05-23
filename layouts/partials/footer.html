@@ -1,13 +1,43 @@
-<div class="row footer">
-	{{ with .Site.Data.content.footer }}
-	<div class="col">
-		<button>{{ .btnContent }}</button>
-		{{ .copyright }}
+{{ with .Site.Data.content.footer }}
+<div class="footer-container">
+	<div class="row footer">
+		
+		<div class="col-3">
+			<button class="btn btn-outline-primary"><h4>{{ .btnContent }}</h4></button>
+			<p class="copyright">{{ .copyright }}</p> 
+		</div>
+
+		<div class="col-5 footer-list">
+			<h3>{{ .product.title }}</h3>
+			<div class="row">
+				<div class="col">
+					<ul>
+						{{ range $index, $element := .product.items }}
+						<li>{{ .description }}</li>
+						{{ end }}
+					</ul>
+				</div>
+				<div class="col">
+					<ul>
+						{{ range $index, $element := .product.items2 }}
+						<li>{{ .description }}</li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		{{ range $index, $element := .sections }}
+		<div class="col-2 footer-list">
+			{{ partial "footerlist" . }}
+		</div>
+		{{ end }}
+		
 	</div>
-	{{ range $index, $element := .sections }}
-	<div class="col">
-		{{ partial "footerlist" . }}
+
+	<div class="row d-flex terms-box">
+		<h6>{{ .termsContent }}</h6>
 	</div>
-	{{ end }}
-	{{ end }}
 </div>
+
+{{ end }}
