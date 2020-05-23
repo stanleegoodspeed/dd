@@ -14,7 +14,6 @@ header:
 
 price:
   items:
-    # price item
     - title : "Infrastructure"
       borderEnable : true
       color: "infra"
@@ -27,7 +26,6 @@ price:
         - description: "250+ integrations"
         - description: "Out-of-the-box dashboards"
         - description: "15-month metric retention"
-    # price item
     - title : "APM"
       borderEnable : true
       color: "apm"
@@ -39,7 +37,6 @@ price:
         - description: "Java, Ruby, Python, Go, Node, and more"
         - description: "Out-of-the-box application health dashboards"
         - description: "1 million trace events per host included"  
-    # price item
     - title : "Logs Management"
       borderEnable : false
       color: "log"
@@ -52,9 +49,36 @@ price:
         - description: "Automated & custom processing"
         - description: "Fully integrated with Infrastructure and APM"
 
-feature:
-  companies:
-    - name: "airbnb"
-    - name: "peloton"
-    - name: "evernote"
-    - name: "pagerduty"
+footer:
+  btnContent: "free trial"
+  productSection:
+    title: "Product"
+    items:
+      - description: "Features"
+      - description: "APM"
+      - description: "Integrations"
+      - description: "Alerts"
+      - description: "API"
+      - description: "Pricing"
+      - description: "Documentation"
+      - description: "Support"
+      - description: "Resources"
+      - description: "Security"
+  aboutSection:
+    title: "About"
+    items:
+      - description: "Contact Us"
+      - description: "Partners"
+      - description: "Press"
+      - description: "Our Team"
+      - description: "Careers"
+      - description: "Legal"
+  socialSection:
+    title: "Social"
+    items:
+      - description: "Blog"
+      - description: "Espanol"
+      - description: "Japanese"
+      - description: "Instagram"
+      - description: "Twitter"
+      
