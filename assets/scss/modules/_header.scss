@@ -27,9 +27,9 @@
 	}
 
 	.cta-button {
-		border: 3px solid #724EEF;
+		border: 3px solid $datadogPurple;
 		box-sizing: border-box;
-		color: #724EEF;
+		color: $datadogPurple;
 		max-height: 80px;
 		height: 100%;
 
@@ -47,8 +47,8 @@
 
 		&:hover {
 			color: #fff;
-			background-color: #724EEF;
-			border-color: #724EEF;
+			background-color: $datadogPurple;
+			border-color: $datadogPurple;
 		}
 	}
 }

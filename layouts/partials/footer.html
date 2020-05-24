@@ -13,14 +13,14 @@
 				<div class="col">
 					<ul>
 						{{ range $index, $element := .product.items }}
-						<li>{{ .description }}</li>
+						<li><a href="#">{{ .description }}</a></li>
 						{{ end }}
 					</ul>
 				</div>
 				<div class="col">
 					<ul>
 						{{ range $index, $element := .product.items2 }}
-						<li>{{ .description }}</li>
+						<li><a href="#">{{ .description }}</a></li>
 						{{ end }}
 					</ul>
 				</div>
