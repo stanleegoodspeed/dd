@@ -9,8 +9,14 @@
 }
 
 .company-square {
-    width: 186px;
-    height: 184px;
+	// width: calc($containerWidth * 0.132)186px;
+	width: 186px; // TODO - calculate based on container width? or use breakpoints
+	height: 184px;
+	
+	@include media-breakpoint-down(md) {
+		width: 80%;
+	}
+
     text-align: center;
     display: flex;
 	justify-content: center;
@@ -90,7 +96,7 @@
 }
 
 .samsung img {
-    width: 70%;
+    width: 60%;
 }
 
 .wholefoods {
@@ -106,7 +112,7 @@
 }
 
 .att img {
-    width: 70%;
+    width: 55%;
 }
 
 .nginx {
@@ -114,5 +120,5 @@
 }
 
 .nginx img {
-    width: 70%;
+    width: 55%;
 }

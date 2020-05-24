@@ -2,12 +2,12 @@
 <div class="footer-container">
 	<div class="row footer">
 		
-		<div class="col-3">
+		<div class="col-sm-12 col-md-12 col-lg-3">
 			<button class="btn btn-outline-primary"><h4>{{ .btnContent }}</h4></button>
 			<p class="copyright">{{ .copyright }}</p> 
 		</div>
 
-		<div class="col-5 footer-list">
+		<div class="col-sm-12 col-md-12 col-lg-5 footer-list">
 			<h3>{{ .product.title }}</h3>
 			<div class="row">
 				<div class="col">
@@ -28,7 +28,7 @@
 		</div>
 
 		{{ range $index, $element := .sections }}
-		<div class="col-2 footer-list">
+		<div class="col-sm-12 col-md-12 col-lg-2 footer-list">
 			{{ partial "footerlist" . }}
 		</div>
 		{{ end }}

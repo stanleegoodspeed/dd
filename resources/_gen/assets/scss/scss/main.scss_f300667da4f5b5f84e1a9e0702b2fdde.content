@@ -6175,6 +6175,11 @@ body {
 .feature-column {
   flex-direction: column; }
 
+@media (max-width: 991.98px) {
+  .tmp {
+    display: flex;
+    justify-content: center; } }
+
 .apm {
   background-color: #14D071;
   max-width: 557px;
@@ -6202,6 +6207,9 @@ body {
   text-align: center;
   display: flex;
   justify-content: center; }
+  @media (max-width: 991.98px) {
+    .company-square {
+      width: 80%; } }
   .company-square img {
     align-self: center; }
 
@@ -6257,7 +6265,7 @@ body {
   background-color: #1428A0; }
 
 .samsung img {
-  width: 70%; }
+  width: 60%; }
 
 .wholefoods {
   background-color: #000000; }
@@ -6269,13 +6277,13 @@ body {
   background-color: #00A8E0; }
 
 .att img {
-  width: 70%; }
+  width: 55%; }
 
 .nginx {
   background-color: #00AA4E; }
 
 .nginx img {
-  width: 70%; }
+  width: 55%; }
 
 .observability {
   background: #F5F5F5; }
@@ -6316,6 +6324,10 @@ body {
   padding-top: 49px;
   padding-left: 195px;
   padding-right: 59px; }
+  @media (max-width: 991.98px) {
+    .footer {
+      padding-left: 30px;
+      padding-right: 30px; } }
   .footer button {
     border: 3px solid #979797;
     box-sizing: border-box;
