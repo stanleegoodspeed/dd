@@ -2,10 +2,6 @@
     font-family: National, Roboto-Light, serif;
 }
 
-body {
-	background-color: lightgrey; /* TEMP - REMOVE */
-}
-
 .container {
     background-color: white;
     max-width: 1400px;
@@ -14,10 +10,9 @@ body {
 .main-container {
     padding-top: 38px;
 	padding-left:30px;
-	padding-right: 60px;
 
 	// TODO - Should only be done for large and above
-	// @include media-breakpoint-up(md) {	
-	// 	padding-right: 60px;
-	// }
+	@include media-breakpoint-up(lg) {	
+		padding-right: 60px;
+	}
 }

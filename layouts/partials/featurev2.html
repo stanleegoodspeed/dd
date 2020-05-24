@@ -1,7 +1,9 @@
-<div class="row feature-container">
+<div class="row feature-container d-flex">
+	<!-- TODO: Add d-flex + justify center for medium and below-->
 	<div class="col-sm-12 col-md-12 col-xl-6 ">
 		{{ partial "featurecard" (dict "Type" "apm") }}
 	</div>
+	<!-- TODO: Add d-flex + justify center for medium and below-->
 	<div class="col-sm-12 col-md-12 col-xl-6 ">
 		{{ partial "featurecard" (dict "Type" "infra") }}
 	</div>
@@ -9,6 +11,7 @@
 </div>
 
 <div class="row">
+	<!-- TODO: Add d-flex + justify center for medium and below-->
 	<div class="col-sm-12 col-md-12 col-xl-6 ">
 		{{ partial "featurecard" (dict "Type" "logs") }}
 		{{ partial "companycard" . }}

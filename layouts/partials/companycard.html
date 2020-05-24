@@ -1,11 +1,11 @@
 <div class="row company-card">
 	{{ with .Site.Data.content.company }}
 	<div class="row company-top-grid">
-		<div class="col-4">
+		<div class="col-sm-12 col-md-12 col-lg-4 d-none d-lg-block">
 			{{ partial "companysquare" (dict "company" "airbnb") }}
 			{{ partial "companysquare" (dict "company" "peloton") }}
 		</div>
-		<div class="col-8 d-flex company-quote-container" >
+		<div class="col-sm-12 col-md-12 col-lg-8 d-flex company-quote-container" >
 			<div class="row quote">
 				<img src="/images/adroll-logo.png" alt="adroll">
 				<p>{{ .quote }}</p>
@@ -23,12 +23,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- <div class="row d-flex">
-		<div class="col" style="background-color:#F5F5F5;">
-			col col col col col col col col col col col col col col col col col col col col col col col col col col col col col col
-		</div>
-	</div> -->
 
 	<div class="row company-bottom-grid">
 		{{ partial "companysquare" (dict "company" "evernote") }}

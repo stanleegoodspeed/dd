@@ -10,6 +10,11 @@
 	padding-left: 195px;
 	padding-right: 59px;
 
+	@include media-breakpoint-down(md) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
 	button {
 		border: 3px solid #979797;
 		box-sizing: border-box;
