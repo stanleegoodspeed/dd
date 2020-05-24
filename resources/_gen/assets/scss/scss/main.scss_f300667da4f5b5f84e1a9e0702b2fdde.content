@@ -6197,15 +6197,43 @@ body {
     padding-left: 15px; }
 
 .company-square {
-  max-width: 186px;
-  max-height: 184px;
-  width: 100%;
-  height: 100%;
+  width: 186px;
+  height: 184px;
   text-align: center;
   display: flex;
   justify-content: center; }
   .company-square img {
     align-self: center; }
+
+.company-top-grid {
+  width: 100%; }
+
+.company-bottom-grid {
+  padding-left: 15px; }
+
+.quote {
+  align-self: center; }
+  .quote p {
+    font-family: National;
+    font-size: 16px;
+    line-height: 22px; }
+  .quote img {
+    padding-bottom: 43px; }
+  .quote h6 {
+    font-size: 14px;
+    line-height: 16px; }
+  .quote a {
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #724EEF; }
+  .quote .author {
+    font-weight: 900; }
+
+.company-quote-container {
+  background-color: #F5F5F5;
+  padding-left: 45px;
+  padding-right: 45px; }
 
 .airbnb {
   background-color: #FF5A5F; }
@@ -6274,6 +6302,9 @@ body {
 
 .arrow {
   align-self: center; }
+
+.carousel-inner img {
+  max-width: 440px !important; }
 
 .footer-container {
   background: linear-gradient(180deg, #443E48 0%, #110617 100%);

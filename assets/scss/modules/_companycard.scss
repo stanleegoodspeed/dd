@@ -8,13 +8,9 @@
 	}
 }
 
-
-
 .company-square {
-    max-width: 186px;
-	max-height: 184px;
-	width: 100%;
-	height: 100%;
+    width: 186px;
+    height: 184px;
     text-align: center;
     display: flex;
 	justify-content: center;
@@ -23,6 +19,47 @@
 		align-self: center;
 	}
 }
+
+.company-top-grid {
+	width: 100%;	
+	
+}
+
+.company-bottom-grid {
+	padding-left:15px;
+}
+
+.quote {
+	align-self: center;
+	p {
+		font-family: National;
+		font-size: 16px;
+		line-height: 22px;
+	}
+	img {
+		padding-bottom:43px;
+	}
+	h6 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	a {
+		padding-top:30px;
+		font-size: 18px;
+		line-height: 18px;
+		color: $datadogPurple;
+	}
+	.author {
+		font-weight: 900;
+	}
+}
+
+.company-quote-container {
+	background-color:#F5F5F5;
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
 
 .airbnb {
     background-color: $airbnbColor;

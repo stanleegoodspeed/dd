@@ -49,13 +49,19 @@ price:
         - description: "Automated & custom processing"
         - description: "Fully integrated with Infrastructure and APM"
 
+company:
+  quote: “Datadog has been instrumental in managing our real-time infrastructure, globally distributed in 5 data centers across hundreds of instances, and thousands of different metrics and dimensions for each host. I can't believe there was a time when we didn't have Datadog.”
+  author: "Valentino Volonghi"
+  title: "Chief Technology Officer"
+  link: "See More Stories"
+
 footer:
   btnContent: "free trial"
   copyright: "© Datadog 2017"
   termsContent: "Terms  |  Privacy  |  Cookies"
   product: 
     title: "Product"
-    items:
+    items1:
       - description: "Features"
       - description: "APM"
       - description: "Integrations"
