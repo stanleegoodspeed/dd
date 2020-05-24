@@ -1,21 +1,24 @@
 .company-card {
 	padding-bottom:15px;
 	padding-left:15px;
-	padding-bottom: 108px;
+	padding-bottom: 30px;
 
+	@include media-breakpoint-up(xl) {
+		padding-bottom: 108px;
+	}
+	
 	.row2 {
 		padding-left:15px;
 	}
 }
 
 .company-square {
-	// width: calc($containerWidth * 0.132)186px;
-	width: 186px; // TODO - calculate based on container width? or use breakpoints
+	width: 186px;
 	height: 184px;
 	
-	@include media-breakpoint-down(md) {
-		width: 80%;
-	}
+	// @include media-breakpoint-down(md) {
+	// 	width: 80%;
+	// }
 
     text-align: center;
     display: flex;
@@ -27,16 +30,31 @@
 }
 
 .company-top-grid {
-	width: 100%;	
+	// @include media-breakpoint-up(lg) {
+	// 	width: 100%;	
+	// }
+	// background-color:red;
 	
 }
 
 .company-bottom-grid {
 	padding-left:15px;
+
+	@include media-breakpoint-down(sm) {
+		justify-content: center;
+		padding-left:0px;
+	}
 }
 
 .quote {
+	padding-left:30px;
 	align-self: center;
+
+	height: 100%;
+	max-width: 376px;
+	padding-top:50px;
+	background-color: #F5F5F5;;
+
 	p {
 		font-family: National;
 		font-size: 16px;
@@ -48,6 +66,7 @@
 	h6 {
 		font-size: 14px;
 		line-height: 16px;
+		margin-bottom:0px;
 	}
 	a {
 		padding-top:30px;
@@ -64,6 +83,13 @@
 	background-color:#F5F5F5;
 	padding-left: 45px;
 	padding-right: 45px;
+	max-width: 557px;
+
+	@include media-breakpoint-down(md) {
+		margin-left: 15px;
+    	padding-top: 30px;
+	}
+	
 }
 
 

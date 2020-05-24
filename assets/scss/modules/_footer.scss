@@ -54,6 +54,11 @@
 
 .copyright {
 	padding-top: 75px;
+
+	@include media-breakpoint-down(md) {
+		padding-top: 25px;
+	}
+
 	font-family: Helvetica Neue;
 	font-style: normal;
 	font-weight: normal;

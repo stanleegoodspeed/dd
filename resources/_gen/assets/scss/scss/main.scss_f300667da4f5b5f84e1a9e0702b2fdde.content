@@ -6065,8 +6065,12 @@ body {
     color: #000000; }
   .header-card .tagline {
     display: flex;
-    margin-top: 18px;
+    padding-bottom: 30px;
     flex-grow: 1; }
+    @media (min-width: 1200px) {
+      .header-card .tagline {
+        margin-top: 18px;
+        padding-bottom: 0px; } }
     .header-card .tagline h3 {
       font-size: 26px;
       line-height: 34px; }
@@ -6089,16 +6093,26 @@ body {
       background-color: #724EEF;
       border-color: #724EEF; }
 
-.price-card-container {
-  background-color: #F5F5F5;
+.card-container {
   margin-right: 0px; }
-
+  @media (min-width: 768px) {
+    .card-container {
+      background-color: #F5F5F5; } }
 .price-card {
   display: flex;
   flex-direction: column;
   padding-top: 24px;
   padding-left: 23px;
   padding-bottom: 26px; }
+  @media (max-width: 767.98px) {
+    .price-card {
+      background-color: #F5F5F5;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+      text-align: center;
+      margin-bottom: 30px; } }
+  @media (min-width: 768px) {
+    .price-card .price-border {
+      border-right: 1px solid #C7C7C7; } }
   .price-card h6 {
     font-family: National-Bold;
     font-size: 12px;
@@ -6106,6 +6120,9 @@ body {
     letter-spacing: 0.342857px;
     text-transform: uppercase;
     margin-bottom: 0px; }
+    @media (max-width: 767.98px) {
+      .price-card h6 {
+        font-size: 18px; } }
   .price-card p {
     font-size: 16px;
     line-height: 19px;
@@ -6141,9 +6158,12 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%; }
-  @media (min-width: 768px) {
-    .price-card .price-border {
-      border-right: 1px solid #C7C7C7; } }
+    @media (max-width: 767.98px) {
+      .price-card .price-card-container {
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-right: -15px; } }
 .infra-box h6, .infra-box a {
   color: #2B2AA7; }
 
@@ -6153,17 +6173,7 @@ body {
 .log-box h6, .log-box a {
   color: #FF635A; }
 
-@media (max-width: 767.98px) {
-  .price-card {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
-    text-align: center;
-    margin-bottom: 10px; }
-  .price-card-container {
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center; } }
-
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .price-box {
     padding-left: 30px;
     padding-right: 30px;
@@ -6197,7 +6207,10 @@ body {
 .company-card {
   padding-bottom: 15px;
   padding-left: 15px;
-  padding-bottom: 108px; }
+  padding-bottom: 30px; }
+  @media (min-width: 1200px) {
+    .company-card {
+      padding-bottom: 108px; } }
   .company-card .row2 {
     padding-left: 15px; }
 
@@ -6207,20 +6220,22 @@ body {
   text-align: center;
   display: flex;
   justify-content: center; }
-  @media (max-width: 991.98px) {
-    .company-square {
-      width: 80%; } }
   .company-square img {
     align-self: center; }
 
-.company-top-grid {
-  width: 100%; }
-
 .company-bottom-grid {
   padding-left: 15px; }
-
+  @media (max-width: 767.98px) {
+    .company-bottom-grid {
+      justify-content: center;
+      padding-left: 0px; } }
 .quote {
-  align-self: center; }
+  padding-left: 30px;
+  align-self: center;
+  height: 100%;
+  max-width: 376px;
+  padding-top: 50px;
+  background-color: #F5F5F5; }
   .quote p {
     font-family: National;
     font-size: 16px;
@@ -6229,7 +6244,8 @@ body {
     padding-bottom: 43px; }
   .quote h6 {
     font-size: 14px;
-    line-height: 16px; }
+    line-height: 16px;
+    margin-bottom: 0px; }
   .quote a {
     padding-top: 30px;
     font-size: 18px;
@@ -6241,8 +6257,12 @@ body {
 .company-quote-container {
   background-color: #F5F5F5;
   padding-left: 45px;
-  padding-right: 45px; }
-
+  padding-right: 45px;
+  max-width: 557px; }
+  @media (max-width: 991.98px) {
+    .company-quote-container {
+      margin-left: 15px;
+      padding-top: 30px; } }
 .airbnb {
   background-color: #FF5A5F; }
 
@@ -6287,6 +6307,9 @@ body {
 
 .observability {
   background: #F5F5F5; }
+  @media (max-width: 1199.98px) {
+    .observability {
+      margin-bottom: 30px; } }
   .observability h6 {
     font-size: 12px;
     line-height: 16px;
@@ -6314,6 +6337,11 @@ body {
 .carousel-inner img {
   max-width: 440px !important; }
 
+.carousel {
+  padding-left: 25px; }
+  @media (max-width: 991.98px) {
+    .carousel {
+      padding-right: 25px; } }
 .footer-container {
   background: linear-gradient(180deg, #443E48 0%, #110617 100%);
   margin-left: -15px;
@@ -6365,7 +6393,9 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #B6B6B6; }
-
+  @media (max-width: 991.98px) {
+    .copyright {
+      padding-top: 25px; } }
 @media (max-width: 991.98px) {
   .navbar {
     width: 100%;

@@ -4,6 +4,19 @@
     padding-top: 24px;
     padding-left: 23px;
 	padding-bottom: 26px;
+
+	@include media-breakpoint-down(sm) {
+		background-color:#F5F5F5;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, .2) !important;
+        text-align: center;
+		margin-bottom: 30px;
+	}
+
+	@include media-breakpoint-up(md) {	
+		.price-border {
+			border-right: 1px solid #C7C7C7;
+		}
+	}
 	
 	h6 {
 		font-family: National-Bold;
@@ -12,6 +25,10 @@
 		letter-spacing: 0.342857px;
 		text-transform: uppercase;
 		margin-bottom: 0px;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 18px;
+		}
 	}
 
 	p {
@@ -21,7 +38,6 @@
 	}
 
 	h1 {
-		// font-family: National, Roboto-Light, serif;
     	font-size: 48px;
 		line-height: 50px;
 		font-family: Roboto-Medium;
@@ -64,18 +80,14 @@
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-	}
 
-	// .price-border {
-	// 	border-right: 1px solid #C7C7C7;
-	// }
-
-	@include media-breakpoint-up(md) {	
-		.price-border {
-			border-right: 1px solid #C7C7C7;
+		@include media-breakpoint-down(sm) {
+			margin-top: 20px;
+			justify-content: center;
+			align-items: center;
+			margin-right: -15px;	
 		}
 	}
-
 }
 
 .infra-box {
@@ -96,24 +108,10 @@
 	} 
 }
 
-@include media-breakpoint-down(sm) {
-	.price-card {
-        box-shadow: 0 4px 10px rgba(0, 0, 0, .2) !important;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .price-card-container {
-        margin-top: 20px;
-        justify-content: center;
-        align-items: center;
-	}
-}
-
-@include media-breakpoint-down(md) {	
-	.price-box {
+.price-box {
+	@include media-breakpoint-down(lg) {
 		padding-left:30px;
 		padding-right:30px;
-		padding-top:30px;
+		padding-top: 30px;
 	}
 }
-

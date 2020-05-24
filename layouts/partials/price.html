@@ -1,5 +1,5 @@
 <div class="col-sm-12 col-md-12 col-xl-8 price-box">
-	<div class="row price-card-container">
+	<div class="row card-container">
 		{{ with .Site.Data.content.price }}
 			{{ range $index, $element := .items }}
 				{{ partial "pricecard" . }}

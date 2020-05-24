@@ -1,4 +1,7 @@
-.price-card-container {
-    background-color: #F5F5F5;
+.card-container {
+	@include media-breakpoint-up(md) {	
+		background-color: #F5F5F5;
+	}
+    
     margin-right: 0px;
 }
