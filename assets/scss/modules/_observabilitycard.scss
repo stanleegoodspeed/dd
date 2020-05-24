@@ -1,5 +1,9 @@
 .observability {
-    background: #F5F5F5;
+	background: #F5F5F5;
+	
+	@include media-breakpoint-down(lg) {
+		margin-bottom:30px;
+	}
 	
 	h6 {
 		font-size: 12px;
@@ -35,5 +39,12 @@
 .carousel-inner {
 	img {
 		max-width:440px !important;
+	}
+}
+
+.carousel {
+	padding-left: 25px;
+	@include media-breakpoint-down(md) {
+		padding-right:25px;
 	}
 }

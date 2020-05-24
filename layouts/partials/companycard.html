@@ -1,13 +1,15 @@
 <div class="row company-card">
 	{{ with .Site.Data.content.company }}
+
+	<!-- Visible only on xl large-->
 	<div class="row company-top-grid">
-		<div class="col-sm-12 col-md-12 col-lg-4 d-none d-lg-block">
+		<div class="col-lg-4">
 			{{ partial "companysquare" (dict "company" "airbnb") }}
 			{{ partial "companysquare" (dict "company" "peloton") }}
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-8 d-flex company-quote-container" >
-			<div class="row quote">
-				<img src="/images/adroll-logo.png" alt="adroll">
+
+		<div class="col-lg-8 quote">
+			<img src="/images/adroll-logo.png" alt="adroll">
 				<p>{{ .quote }}</p>
 				<ul style="list-style: none;padding-left: 0px;">
 					<li>
@@ -20,8 +22,7 @@
 						<a href="#">{{ .link }}</a>
 					</li>
 				</ul>
-			</div>
-		</div>
+		</div>		
 	</div>
 
 	<div class="row company-bottom-grid">
@@ -32,6 +33,36 @@
 		{{ partial "companysquare" (dict "company" "wholefoods") }}
 		{{ partial "companysquare" (dict "company" "att") }}
 	</div>
+
+	<div class="row company-quote-full">
+		<div class="col quote">
+			<img src="/images/adroll-logo.png" alt="adroll">
+				<p>{{ .quote }}</p>
+				<ul style="list-style: none;padding-left: 0px;">
+					<li>
+						<h6 class="author">{{ .author }}</h6>
+					</li>
+					<li>
+						<h6>{{ .title }}</h6>
+					</li>
+					<li style="padding-top:10px;">
+						<a href="#">{{ .link }}</a>
+					</li>
+				</ul>
+		</div>
+	</div>
+
+	<div class="row company-bottom-grid-full">
+		{{ partial "companysquare" (dict "company" "airbnb") }}
+		{{ partial "companysquare" (dict "company" "peloton") }}
+		{{ partial "companysquare" (dict "company" "evernote") }}
+		{{ partial "companysquare" (dict "company" "samsung") }}
+		{{ partial "companysquare" (dict "company" "nginx") }}
+		{{ partial "companysquare" (dict "company" "pagerduty") }}
+		{{ partial "companysquare" (dict "company" "wholefoods") }}
+		{{ partial "companysquare" (dict "company" "att") }}
+	</div>
+
 	{{ end }}
 	
 </div>
