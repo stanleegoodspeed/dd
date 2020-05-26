@@ -6,9 +6,9 @@ Live demo: http://demo.colincole.me
 Running Hugo v0.71.0
 1. Clone repo
 2. Run `npm install`
-1. Install hugo
-2. Run `hugo server -D`
-3. Visit http://localhost:1313
+3. Install hugo
+4. Run `hugo server -D`
+5. Visit http://localhost:1313
 
 ### Deploy
 1. export AWS_PROFILE=[profile]
