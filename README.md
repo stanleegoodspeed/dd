@@ -4,6 +4,8 @@ Live demo: http://demo.colincole.me
 
 ### Development
 Running Hugo v0.71.0
+1. Clone repo
+2. Run `npm install`
 1. Install hugo
 2. Run `hugo server -D`
 3. Visit http://localhost:1313
