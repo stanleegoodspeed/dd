@@ -1,6 +1,6 @@
-baseURL = "http://demo.colincole.me"
+baseURL = "https://demo.colincole.me"
 languageCode = "en-us"
-title = "Datadog Redesign - CC"
+title = "Datadog Redesign"
 
 [deployment]
 # By default, files are uploaded in an arbitrary order.
