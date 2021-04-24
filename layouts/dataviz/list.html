@@ -1,0 +1,57 @@
+{{ define "main" }}
+<main>
+    {{ with .Site.Data.content.dataviz }}
+    <!-- Desktop -->
+    <div class="d-block">
+      <section id="scrolly">
+        <figure>
+          {{ range $index, $element := .items }}
+            <div id="my_dataviz_{{ $index }}" class="dataviz {{ if eq $index 0 }} is-active {{ end }}">
+              <img src="/images/dataviz/{{ .image }}" alt="{{ .name }}">
+            </div>
+          {{ end }}
+        </figure>
+        <article>
+          {{ range $index, $element := .items }}
+            <div class="step {{ if eq $index 0 }} is-active {{ end }}" data-step="{{ $index }}">
+              <div class="step-container">
+                <p class="title">{{ .title }}</p>
+                <p class="bio">{{ .bio }}</p>
+                <blockquote>
+                  {{ .quote }}
+                </blockquote>
+              </div>
+            </div>
+          {{ end }}
+        </article>
+      </section>
+    </div>
+    <!-- Mobile -->
+    <!-- <div class="d-md-none d-block">
+      <section id="scrolly">
+        <figure>
+          {{ range $index, $element := .items }}
+            <div id="my_dataviz_{{ $index }}" class="dataviz {{ if eq $index 0 }} is-active {{ end }}">
+              <img src="/images/dataviz/{{ .image }}" alt="{{ .name }}">
+            </div>
+          {{ end }}
+        </figure>
+        <article>
+          {{ range $index, $element := .items }}
+            <div class="step {{ if eq $index 0 }} is-active {{ end }}" data-step="{{ $index }}">
+              <div class="step-container">
+                <p class="title">{{ .title }}</p>
+                <p class="bio">{{ .bio }}</p>
+                <blockquote>
+                  {{ .quote }}
+                </blockquote>
+              </div>
+            </div>
+          {{ end }}
+        </article>
+      </section>
+    </div> -->
+    {{ end }}
+</main>
+
+{{ end }}
